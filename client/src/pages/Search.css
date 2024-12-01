@@ -1,0 +1,205 @@
+/* client/src/pages/Search.css */
+
+.search-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.search-form .form-group {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-form .form-group.checkbox-group {
+  flex: 1 1 100%;
+  flex-direction: row;
+  align-items: center;
+}
+
+.search-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #343a40;
+}
+
+.search-form input,
+.search-form select {
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.search-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1db954;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.search-button:hover {
+  background-color: #17a34a;
+}
+
+.results-container {
+  margin-top: 30px;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.results-table th,
+.results-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.results-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.add-to-playlist-button {
+  background-color: #1db954;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-to-playlist-button:hover {
+  background-color: #17a34a;
+}
+
+.s-message {
+  color: rgb(0, 188, 63);
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .search-form .form-group {
+    flex: 1 1 100%;
+  }
+
+  .search-button {
+    margin-top: 20px;
+  }
+}
+
+
+.search-form .form-group.checkbox-group {
+    flex: 1 1 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust gap between checkbox and label */
+  }
+  
+  .search-form .form-group.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+  }
+  
+  .search-form .form-group.checkbox-group label {
+    margin: 0;
+  }
+  
+  /* Styles for results list */
+  .results-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .result-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    background-color: #fafafa;
+    cursor: pointer;
+  }
+  
+  .result-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .song-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .song-info {
+    font-size: 16px;
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  .song-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .song-actions .add-to-playlist-button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  
+  .song-details {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .song-details p {
+    margin: 5px 0;
+  }
+  
+  /* Adjust styles for heart icon */
+  .song-actions svg {
+    font-size: 20px;
+  }
+  
+  /* Responsive Design Adjustments */
+  @media (max-width: 768px) {
+    .search-form .form-group {
+      flex: 1 1 100%;
+    }
+  
+    .search-button {
+      margin-top: 20px;
+    }
+  
+    .song-summary {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .song-actions {
+      margin-top: 10px;
+    }
+  }

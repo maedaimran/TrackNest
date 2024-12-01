@@ -1,0 +1,56 @@
+/* client/src/pages/Playlists.css */
+
+.playlists-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .playlists-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .playlist-item {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+  .playlist-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .playlist-header:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .playlist-name {
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  .playlist-creator {
+    font-style: italic;
+    color: #6c757d;
+  }
+  
+  .songs-list-container {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .songs-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .song-item {
+    padding: 5px 0;
+  }
+  
