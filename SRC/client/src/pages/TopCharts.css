@@ -1,0 +1,80 @@
+/* client/src/pages/TopCharts.css */
+
+.top-charts-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .top-charts-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1db954;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  .songs-list-container {
+    margin-top: 30px;
+  }
+  
+  .songs-list-container h3 {
+    margin-bottom: 20px;
+    color: #343a40;
+  }
+  
+  .songs-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .songs-table th,
+  .songs-table td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .songs-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+  }
+  
+  .songs-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .error-message {
+    color: red;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .songs-table th,
+    .songs-table td {
+      padding: 8px;
+    }
+  }
+  
