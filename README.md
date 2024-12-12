@@ -1,4 +1,5 @@
-Track Nest - Your Music Haven 🎵
+#Track Nest - Your Music Haven 🎵
+
 Track Nest is a dynamic web app built with React, SQL, and JavaScript, offering users an immersive and personalized music experience.
 
 Features
